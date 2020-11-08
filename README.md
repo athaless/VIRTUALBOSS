@@ -17,9 +17,7 @@ Old prod - This is project management control like "Jira", but with more feature
   </tr>
 </table>
 
-# This README would normally document whatever steps are necessary to get the application up and running.
-
-Things I may want to cover soon:
+# Things I may want to cover soon: in this README
 
 * (IIS) Internet Information Service Version
 
