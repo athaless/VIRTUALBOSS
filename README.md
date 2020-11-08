@@ -1,6 +1,6 @@
 # VirtualBOSS
 
-...
+Old prod - This is project management control like "Jira", but with more features like financial control, invoices, survey control, employees, etc... and as well, have a project, activities, task and backlog manager.
 
 <table width:100%>
   <tr>
