@@ -1,6 +1,6 @@
 # VirtualBOSS
 
-...
+Old prod - This is project management control like "Jira", but with more features like financial control, invoices, survey control, employees, etc... and as well, have a project, activities, task and backlog manager.
 
 <table width:100%>
   <tr>
@@ -16,3 +16,19 @@
     <td><img src="./_/virtualboss_img08.jpg"></td>
   </tr>
 </table>
+
+# Things I may want to cover soon: in this README
+
+* (IIS) Internet Information Service Version
+
+* System dependencies (ASP, PHP, MySQL5)
+
+* Configuration
+
+* Database creation / Database initialization
+
+* ...
+
+# To RUN
+
+* ...
