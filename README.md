@@ -16,3 +16,21 @@ Old prod - This is project management control like "Jira", but with more feature
     <td><img src="./_/virtualboss_img08.jpg"></td>
   </tr>
 </table>
+
+# This README would normally document whatever steps are necessary to get the application up and running.
+
+Things I may want to cover soon:
+
+* (IIS) Internet Information Service Version
+
+* System dependencies (ASP, PHP, MySQL5)
+
+* Configuration
+
+* Database creation / Database initialization
+
+* ...
+
+# To RUN
+
+* ...
