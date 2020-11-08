@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>VirtualBOSS HELP: modulo_USUARIO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author"		 content=?Alessander Oliveira?>
+<meta name="Description" content=?VirtualBOSS - application help for MODULO_USUARIO?></head>
+<body bgcolor="#FFFFFF" style="font-family:Tahoma; size:10px; color:#666666; line-height:25px; vertical-align:top;">
+<table style="width:100%; border:0px; background:#FFFFFF; text-align:left;" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="30" colspan="2" bgcolor="#EDF2F6" style="vertical-align:middle">&nbsp;VirtualBOSS.<b>modulo_PONTO_DESCONTO</b></td>
+  </tr>	
+  <tr><td height="40" colspan="2"></td></tr>	
+
+  <tr>
+    <td colspan="2" valign="top">Este m&oacute;dulo do sistema VirtualBOSS tem por objetivo armazenar os descontos de horas dos usu&aacute;rios e/ou colaboradores. O modulo_PONTO_DESCONTO pode ser utilizado para registrar, por exemplo, os pagamentos de horas extras aos colaboradores, mantendo assim um hist&oacute;rico deste processo, podendo ser pesquisado posteriormente, facilitando o gerenciamento do banco de horas da empresa. </td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr>
+    <td colspan="2" valign="top"><b>Usu&aacute;rios</b></td>
+  </tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#FF8000"></td>
+    <td valign="top" style="padding-left:10px;">O registro de descontos de horas pode ser realizado para qualquer usu&aacute;rio do sistema VirtualBOSS. As informa&ccedil;&otilde;es desta aplica&ccedil;&atilde;o se relacionam com espelho do ponto, utilizando o valor de horas descontadas no c&aacute;lculo do saldo de horas de cada usu&aacute;rio. </td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr><td colspan="2" valign="top"><b>Permissões de acesso (direitos):</b></td></tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#0099FF"></td>
+    <td valign="top" style="padding-left:10px;">
+          <b>Conceito de Aplicação/Módulo</b>
+		  <br />
+		  <br />
+          Considerando a palavra &quot;Aplica&ccedil;&atilde;o&quot; como sin&ocirc;nima de &quot;M&oacute;dulo&quot;: onde determinado grupo de a&ccedil;&otilde;es sobre uma entidade, conjunto de tabelas ou qualquer abstra&ccedil;&atilde;o de cadastros pode ser realizada, temos neste sistema diversos m&oacute;dulos acess&iacute;veis aos usu&aacute;rios cadastrados no sistema, relacionando estas a&ccedil;&otilde;es com permiss&otilde;es de opera&ccedil;&atilde;o e acesso as mesmas que podem ser configuradas neste nesta aplica&ccedil;&atilde;o corrente, para cada usu&aacute;rio.<br />
+          <br />
+		  Cada m&oacute;dulo possui um conjunto de a&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de se registrar um direito de execu&ccedil;&atilde;o sobre ela para cada usu&aacute;rio cadastrado, onde podemos resumir o conceito em 
+		  A&ccedil;&otilde;es  e Direitos, onde:
+		  <br />
+		  <br />
+          <div style="background-color:#E9E9E9; width:90%; height:30px; padding:10px 10px 10px 10px;">&quot;a&ccedil;&atilde;o&quot; &eacute; uma opera&ccedil;&atilde;o da aplica&ccedil;&atilde;o e &quot;direito&quot; &eacute; a permiss&atilde;o de executar uma determinada a&ccedil;&atilde;o.</div>
+          <p><br />
+            <b>A aplica&ccedil;&atilde;o e suas a&ccedil;&otilde;es</b><br />
+		    <br />
+		    Uma aplica&ccedil;&atilde;o (m&oacute;dulo) possui opera&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de controle de permiss&otilde;es, exemplo: este m&oacute;dulo de USU&Aacute;RIOS possui as opera&ccedil;&otilde;es de <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong> e <strong>VIEW</strong> (Inser&ccedil;&atilde;o, Altera&ccedil;&atilde;o, Dele&ccedil;&atilde;o e Visualiza&ccedil;&atilde;o). Desta forma, para cada conta de usu&aacute;rio, &eacute; poss&iacute;vel definir quais opera&ccedil;&otilde;es ele pode ou n&atilde;o realizar neste ou em qualquer outro m&oacute;dulo determinado. <br />
+		    <br />
+		    <b>O usu&aacute;rio e seus direitos</b><br />
+		    <br />
+		  Cada usu&aacute;rio tem ou n&atilde;o a a&ccedil;&atilde;o relativa a aplica&ccedil;&atilde;o, ou seja, uma vez que o m&oacute;dulo de usu&aacute;rios tem estas opera&ccedil;&otilde;es <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong> e <strong>VIEW</strong>, cada usu&aacute;rio dever&aacute; ter ou n&atilde;o permiss&atilde;o em cada uma delas dentro desta aplica&ccedil;&atilde;o. Exemplo: <br />
+	  </p>
+          <div style="background-color:#E9E9E9; width:90%; height:100px; padding:10px 10px 10px 10px;">
+          <p>USER_ID......: fulano<br />
+            APLICA&Ccedil;&Atilde;O.: modulo_usuario (opera&ccedil;&otilde;es: INS, UPD,  DEL  e VIEW)<br />
+            DIREITOS....: <strong>INS=TRUE</strong>//<strong>UPD=TRUE</strong>//<strong>DEL=</strong>FALSE//<strong>VIEW=TRUE</strong></p>
+	  </div>
+	 <br />
+    </td>
+  </tr>
+
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr>
+    <td colspan="2" valign="top"><b>CAMPOS, &quot;REGRA de NEG&Oacute;CIO&quot; e FEATURES </b></td>
+  </tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#009966"></td>
+    <td valign="top" style="padding-left:10px;">
+      <p>Dentre os campos existentes para o cadastro ao qual este m&oacute;dulo trabalha, destacamos abaixo apenas os de especial relev&acirc;ncia, com rela&ccedil;&atilde;o a alguma &quot;regra de neg&oacute;cio&quot; ao qual tal campo se relacione, a saber:<br />
+        <br />
+        <b>ID Usu&aacute;rio</b><strong>:</strong> ID - identificador &uacute;nico do usu&aacute;rio em todo sistema (at&eacute; 50 caracteres) <br />
+        <strong>M&ecirc;s:</strong> M&ecirc;s que foi realizado o desconto <br />
+        <strong>Ano:</strong> Ano que foi realizado o desconto <br />
+        <strong>Total HR :</strong>Total de horas descontadas no per&iacute;odo <br />
+        <strong>Total Min:</strong>Total de minutos descontados no per&iacute;odo <br />
+      </p>
+      <hr /><br />
+		  <b>Regras de neg&oacute;cios</b><br />
+		  <br />
+		  O modulo_PONTO_DESCONTO tem rela&ccedil;&atilde;o direta com o modulo_PONTO. O saldo de horas do colaborador considera os registros realizados no modulo_PONTO_DESCONTO, descontando este valor das hora realizadas. <br />
+          <br />
+          <br />
+          <hr /><br />
+		  <b>Features</b><br />
+		  <br />
+          Al&eacute;m das fun&ccedil;&otilde;es b&aacute;sicas de qualquer m&oacute;dulo do sistema - Inserir, Alterar, Remover e Pesquisar (consideramos um m&oacute;dulo como composto de forma abstrata sempre por estes elementos: dialog(s), filtro(s) e grade de dados), podemos ter features extras conforme o caso. <br />
+          <strong><br />
+    </strong></td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+  <tr>
+    <td width="20" valign="top" bgcolor="#F9F9F9"></td>
+    <td valign="top" style="padding-left:10px;">
+		  <div style=" width:90%; height:130px; background-color:#F9F9F9;padding-top:10px; padding-left:20px; border:1px dotted #CCCCCC;">		  
+		  <b>Informações sobre o documento</b><br />
+		  <ul>
+			<li>Sistema: VirtualBOSS</li>
+			<li>Aplicação: modulo_PONTO_DESCONTO</li>
+			<li>Copyright: <b>Grupo PROEVENTO</b> - T E C H N O L O G I E S</li>
+		  </ul>
+          </div>
+    </td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+</table>
+</body>
+</html>

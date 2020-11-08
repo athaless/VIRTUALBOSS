@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>VirtualBOSS HELP: modulo_USUARIO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Author"		 content=“Alessander Oliveira”>
+<meta name="Description" content=“VirtualBOSS - application help for MODULO_USUARIO”></head>
+<body bgcolor="#FFFFFF" style="font-family:Tahoma; size:10px; color:#666666; line-height:25px; vertical-align:top;">
+<table style="width:100%; border:0px; background:#FFFFFF; text-align:left;" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="30" colspan="2" bgcolor="#EDF2F6" style="vertical-align:middle">&nbsp;VirtualBOSS.<b>modulo_HORARIO</b></td>
+  </tr>	
+  <tr><td height="40" colspan="2"></td></tr>	
+
+  <tr>
+    <td colspan="2" valign="top">O modulo_HORARIO tem por finalidade registrar a carga hor&aacute;ria do colaborador por dia da semana, juntamente com  sua empresa padr&atilde;o em cada hor&aacute;rio cadastrado. Este m&oacute;dulo permite fazer o cadastro de carga hor&aacute;ria com grande flexibilidade, prevendo diversas situa&ccedil;&otilde;es que possam existir, como por exemplo, hor&aacute;rios diferentes em cada dia da semana, e cada dia da semana o colaborador estando em clientes diferentes. </td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr>
+    <td colspan="2" valign="top"><strong>Empresa padr&atilde;o e cadastro de carga hor&aacute;ria </strong></td>
+  </tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#FF8000"></td>
+    <td valign="top" style="padding-left:10px;"><p>O cadastro da empresa padr&atilde;o do colaborador ir&aacute; refletir diretamente no cadastro do ponto (modulo_PONTO), pois ser&aacute; a op&ccedil;&atilde;o selecionada no momento de registro do ponto, caso o colaborador n&atilde;o alter&aacute;-la. Os hor&aacute;rios cadastrados ir&atilde;o refletir na previs&atilde;o de horas informadas no modulo_PONTO, ou seja, se cadastrarmos  a carga hor&aacute;ria de um colaborador na ter&ccedil;a-feira &eacute; de 6:00 horas, este dado ser&aacute; exibido no modulo_PONTO do colaborador, que poder&aacute; visualizar esta informa&ccedil;&atilde;o toda fez que realizar o registro do ponto.</p>
+    </td>
+  </tr>
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr><td colspan="2" valign="top"><b>Permissões de acesso (direitos):</b></td></tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#0099FF"></td>
+    <td valign="top" style="padding-left:10px;">
+          <b>Conceito de Aplicação/Módulo</b>
+		  <br />
+		  <br />
+          Considerando a palavra &quot;Aplica&ccedil;&atilde;o&quot; como sin&ocirc;nima de &quot;M&oacute;dulo&quot;: onde determinado grupo de a&ccedil;&otilde;es sobre uma entidade, conjunto de tabelas ou qualquer abstra&ccedil;&atilde;o de cadastros pode ser realizada, temos neste sistema diversos m&oacute;dulos acess&iacute;veis aos usu&aacute;rios cadastrados no sistema, relacionando estas a&ccedil;&otilde;es com permiss&otilde;es de opera&ccedil;&atilde;o e acesso as mesmas que podem ser configuradas neste nesta aplica&ccedil;&atilde;o corrente, para cada usu&aacute;rio.<br />
+          <br />
+		  Cada m&oacute;dulo possui um conjunto de a&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de se registrar um direito de execu&ccedil;&atilde;o sobre ela para cada usu&aacute;rio cadastrado, onde podemos resumir o conceito em 
+		  A&ccedil;&otilde;es  e Direitos, onde:
+		  <br />
+		  <br />
+          <div style="background-color:#E9E9E9; width:90%; height:30px; padding:10px 10px 10px 10px;">&quot;a&ccedil;&atilde;o&quot; &eacute; uma opera&ccedil;&atilde;o da aplica&ccedil;&atilde;o e &quot;direito&quot; &eacute; a permiss&atilde;o de executar uma determinada a&ccedil;&atilde;o.</div>
+          <p><br />
+            <b>A aplica&ccedil;&atilde;o e suas a&ccedil;&otilde;es</b><br />
+		    <br />
+		    Uma aplica&ccedil;&atilde;o (m&oacute;dulo) possui opera&ccedil;&otilde;es que s&atilde;o pass&iacute;veis de controle de permiss&otilde;es, exemplo: este m&oacute;dulo de HOR&Aacute;RIO possui as opera&ccedil;&otilde;es de <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong> e <strong>VIEW</strong> (Inser&ccedil;&atilde;o, Altera&ccedil;&atilde;o, Dele&ccedil;&atilde;o e Visualiza&ccedil;&atilde;o). Desta forma, para cada conta de usu&aacute;rio, &eacute; poss&iacute;vel definir quais opera&ccedil;&otilde;es ele pode ou n&atilde;o realizar neste ou em qualquer outro m&oacute;dulo determinado. <br />
+		    <br />
+		    <b>O usu&aacute;rio e seus direitos</b><br />
+		    <br />
+		  Cada usu&aacute;rio tem ou n&atilde;o a a&ccedil;&atilde;o relativa a aplica&ccedil;&atilde;o, ou seja, uma vez que o m&oacute;dulo de usu&aacute;rios tem estas opera&ccedil;&otilde;es <strong>INS</strong>, <strong>UPD</strong>, <strong>DEL</strong> e <strong>VIEW</strong>, cada usu&aacute;rio dever&aacute; ter ou n&atilde;o permiss&atilde;o em cada uma delas dentro desta aplica&ccedil;&atilde;o. Exemplo: <br />
+	  </p>
+          <div style="background-color:#E9E9E9; width:90%; height:100px; padding:10px 10px 10px 10px;">
+          <p>USER_ID......: fulano<br />
+            APLICA&Ccedil;&Atilde;O.: modulo_horario (opera&ccedil;&otilde;es: INS, UPD,  DEL e VIEW)<br />
+            DIREITOS....: <strong>INS=TRUE</strong>//<strong>UPD=TRUE</strong>//<strong>DEL=</strong>FALSE//<strong>VIEW=TRUE</strong></p>
+	  </div>
+	 <br />
+    </td>
+  </tr>
+
+
+  <tr><td colspan="2" height="40"></td></tr>	
+  <tr>
+    <td colspan="2" valign="top"><b>CAMPOS, &quot;REGRA de NEG&Oacute;CIO&quot; e FEATURES </b></td>
+  </tr>
+  <tr><td colspan="2" height="40"></td></tr>	
+
+  <tr>
+    <td width="20" valign="top" bgcolor="#009966"></td>
+    <td valign="top" style="padding-left:10px;">
+      <p>Dentre os campos existentes para o cadastro ao qual este m&oacute;dulo trabalha, destacamos abaixo apenas os de especial relev&acirc;ncia, com rela&ccedil;&atilde;o a alguma &quot;regra de neg&oacute;cio&quot; ao qual tal campo se relacione, a saber:<br />
+        <br />
+        <b>ID Usu&aacute;rio</b><strong>:</strong> ID - identificador &uacute;nico do usu&aacute;rio em todo sistema (at&eacute; 50 caracteres) <br />
+        <strong>Dia semana :</strong> Referencia o dia da semana de cadasto da carga hor&aacute;ria do usu&aacute;rio <br />
+        <strong>IN/OUT:</strong>Hor&aacute;rios de in&iacute;cio e fim de turno de trabalho do colaborador <br />
+        <strong>Total: </strong>Total da carga hor&aacute;ria do colaborador para os dias da semana selecionados <br />
+      </p>
+      <hr /><br />
+		  <b>Regras de neg&oacute;cios</b><br />
+		  <br />
+		  A carga hor&aacute;ria 
+		  cadastrada para o usu&aacute;rio incide  sobre o c&aacute;lculo de horas mensais, que ser&atilde;o utilizadas para calcular a remunera&ccedil;&atilde;o do colaborador. O cadastro incorreto da carga hor&aacute;ria poder&aacute; refletir na remunera&ccedil;&atilde;o incorreta do colaborador, quando for utilizada como base as horas registradas no modulo_PONTO. <br />
+          <br />
+          <hr /><br />
+		  <b>Features</b><br />
+		  <br />
+          Al&eacute;m das fun&ccedil;&otilde;es b&aacute;sicas de qualquer m&oacute;dulo do sistema - Inserir, Alterar, Remover e Pesquisar (consideramos um m&oacute;dulo como composto de forma abstrata sempre por estes elementos: dialog(s), filtro(s) e grade de dados), podemos ter features extras conforme o caso: <br />
+          <br />
+          <b>1. &quot;menu combo</b><strong>&quot;</strong>.<br />
+		  <ul>
+			<li>Inserir: Realizar a inser&ccedil;&atilde;o de carga hor&aacute;ria </li>
+          </ul>
+          <p>&nbsp;</p></td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+  <tr>
+    <td width="20" valign="top" bgcolor="#F9F9F9"></td>
+    <td valign="top" style="padding-left:10px;">
+		  <div style=" width:90%; height:130px; background-color:#F9F9F9;padding-top:10px; padding-left:20px; border:1px dotted #CCCCCC;">		  
+		  <b>Informações sobre o documento</b><br />
+		  <ul>
+			<li>Sistema: VirtualBOSS</li>
+			<li>Aplicação: modulo_HORARIO</li>
+			<li>Copyright: <b>Grupo PROEVENTO</b> - T E C H N O L O G I E S</li>
+		  </ul>
+          </div>
+    </td>
+  </tr>
+
+  <tr><td height="40" colspan="2"></td></tr>	
+</table>
+</body>
+</html>

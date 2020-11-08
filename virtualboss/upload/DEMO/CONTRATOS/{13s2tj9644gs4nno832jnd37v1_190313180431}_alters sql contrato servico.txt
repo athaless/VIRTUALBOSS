@@ -1,0 +1,35 @@
+/*-----------------------------*/
+/*Criação da tabela de serviço.*/
+/*-----------------------------*/
+CREATE TABLE CONTRATO_SERVICO(
+  COD_CONTRATO_SERVICO INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  COD_CONTRATO INTEGER NOT NULL,
+  COD_SERVICO INTEGER NOT NULL,
+  DESCRICAO VARCHAR(255),
+  QTDE INTEGER NOT NULL DEFAULT 0, 
+  VALOR DOUBLE(15,5) DEFAULT 0
+);
+/*--------------------------------------------------*/
+/*Inserção dos serviços cadastrados na nova tabela. */
+/*--------------------------------------------------*/
+INSERT INTO CONTRATO_SERVICO(COD_CONTRATO
+                            ,COD_SERVICO
+                            ,DESCRICAO
+                            ,QTDE
+                            ,VALOR)
+SELECT T1.COD_CONTRATO
+      ,T1.COD_SERVICO 
+      ,T2.DESCRICAO
+      ,1
+      ,COALESCE(T2.VALOR,0)
+  FROM CONTRATO T1
+  LEFT OUTER JOIN SV_SERVICO T2 ON (T1.COD_SERVICO = T2.COD_SERVICO)
+ WHERE T1.COD_SERVICO IS NOT NULL; 
+/*----------------------------------------------------*/
+/*Dropando o campo antigo que armazenava os serviços. */
+/*----------------------------------------------------*/
+ALTER TABLE CONTRATO DROP COLUMN COD_SERVICO;
+COMMIT;
+  
+  
+  

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="Table1">
+  <Table>
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>   <Row>
+    <Cell><Data ss:Type="String">COD_CATEGORIA</Data></Cell>
+    <Cell><Data ss:Type="String">NOME</Data></Cell>
+    <Cell><Data ss:Type="String">DESCRICAO</Data></Cell>
+    <Cell><Data ss:Type="String">DT_INATIVO</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">289</Data></Cell>
+    <Cell><Data ss:Type="String">Financeiro</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell><Data ss:Type="String">Gerencial</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">291</Data></Cell>
+    <Cell><Data ss:Type="String">Produtos</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="String">Administrativo</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">293</Data></Cell>
+    <Cell><Data ss:Type="String">Cadastramento</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">294</Data></Cell>
+    <Cell><Data ss:Type="String">Visitação</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">295</Data></Cell>
+    <Cell><Data ss:Type="String">Newsletters</Data></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+    <Cell><Data ss:Type="String"/></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

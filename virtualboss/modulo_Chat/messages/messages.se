@@ -1,0 +1,111 @@
+#
+# All headers used in ConquerChat. You should not change the text on the 
+# left side of the first equal sign (=) since this is the 'key' used to
+# identify a localized message. {0}, {1}, ..., {n} will be replaced with
+# dynamic content when the message is retrieved.
+#
+# Translation by: 		-
+# ConquerChat Version: 	4.1.1
+#
+
+# headers
+users.title=Användare
+rooms.title=Rum
+message.title=Skriv ditt meddelande
+
+# buttons
+button.login=logga in
+button.send=skicka
+button.help=hjälp
+button.logout=Logga ut
+button.add=Lägg till
+
+# login screen
+login.username=Namn:
+login.users_online=Användare i chatten
+login.no_users_online=Ingen användare påloggad i Chatten
+login.users_logged_on={0} av {1} användare påloggade
+login.join_chat=Join {0}
+login.header.username=User
+login.header.room=Rum
+
+# logout screen
+logout.in_progress=Du håller på att logga ut. Vänta!
+
+# admin screen
+admin.login={0} Administration
+admin.password=Password:
+
+admin.button.kick=Kicka
+admin.button.init=Initialize!
+admin.button.remove=Ta bort
+admin.error.incorrect_password=Detta är inte administratorns lösenord.
+
+# users
+users.all=Alla Users
+users.initializing=Initializing...
+
+# user
+user.logged_on={0} loggade på {1}
+user.logged_off={0} lämnade oss {1}
+user.left_room={0} lämnade {1} och gick till {2}
+user.entered_room={0} kom in i {2}
+user.say_all={0} säger {1}
+user.say_private={0} viskar {1} "{2}"
+
+# profile
+profile.title=Profil för {0}
+profile.ip_address=IP Address
+profile.logged_on=Loggade på
+profile.last_action=Senaste aktion
+profile.written_messages=Skrivna meddelanden
+profile.close=Stäng
+
+# rooms
+rooms.max_limit_reached=Error adding new room\n\nYou are not allowed to add more rooms in this chat. The\nlimit of {0} has been reached. You may want to contact the\n webmaster ({1}) in order to\nhave this number increased.
+
+typing_too_fast=Du skriver för fort, vänta en sekund och försök igen.
+you_have_been_logged_out=Du har blivit utloggad från chatten.
+
+# private chat
+private.title=Privat chatt mellan {0} och {1}
+
+# help
+help.title=Quick Help
+help.commands=This list gives you an overview of available commands.
+help.command.bold=&lt;b&gt; and &lt;/b&gt; to surround <b>bold</b> text.
+help.command.italic=&lt;i&gt; and &lt;/i&gt; to surround <i>italic</i> text.
+help.command.underline=&lt;u&gt; and &lt;/u&gt; to surround <u>underlined</u> text.
+help.command.date=&lt;date&gt; inserts current date.
+help.command.time=&lt;time&gt; inserts current time.
+help.command.datetime=&lt;datetime&gt; inserts current date and time.
+help.symbols=Some symbols are used to indicate users logging in, out, etc.
+help.symbols.log_in=A <img border="0" src="images/new.gif" width="9" height="9" alt="new"> indicates a user has logged in.
+help.symbols.log_out=A <img border="0" src="images/bp.gif" width="9" height="9" alt="notify"> indicates a user has logged out.
+help.hint=Hint:
+help.hint.refresh=Type an empty message to refresh chat window immediately.
+help.smilies=Smilies:
+help.smilies.link=Click here to see available smilies.
+
+# smilies
+smilies.title=Smilies
+smilies.description=When typing in special characters known as smilies, these will be replaced by real images as shown in the list below.
+smilies.hung_over=Hung Over
+smilies.smile=Smile
+smilies.clown=Clown
+smilies.frown=Frown
+smilies.wink=Wink
+smilies.angry=Angry
+smilies.devil=Devil
+smilies.big_grin=Big Grin
+smilies.oh=Oh!
+smilies.cheeky=Cheeky
+smilies.tongue=Tongue
+
+# errors
+error.maximum_users_reached=Maximalt antal inloggade har uppnåtts, försök senare!
+error.missing_username=Du måste ange ett namn innan du kan logga in.
+error.username_in_use=Namnet är för tillfället upptaget, välj ett annat.
+error.invalid_username=Ditt namn innehåller otillåtna tecken eller är inte tillåtet, välj ett annat.
+error.username_blocked=Detta namnet kan du inte logga in med.
+error.username_length_exceeded=Användarnamnet får inte överskrida {0} tecken.

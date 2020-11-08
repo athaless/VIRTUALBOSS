@@ -1,0 +1,228 @@
+/*------------------------------------------------------------------------------------------ */
+/* INI: Configurações gerais 'default' ----------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */
+  a         { font-size:11px; font-family:Tahoma; color:#333333; text-decoration:none; font: }
+  a:hover   { font-size:11px; font-family:Tahoma; color:#999999; text-decoration:none; }
+  td        { font-size:11px; font-family:Tahoma; color:#333333; text-align:left; }
+  html,body { background:#FFFFFF; margin:0px; padding:0px; border:none; width:100%; height:100%; }
+  /* br  {padding:1px 10px; border:1px dashed #000; } Só o IE aceita estilos em BR */
+/*------------------------------------------------------------------------------------------ */
+/* FIM: Configurações gerais 'default' ----------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */
+
+
+/*------------------------------------------------------------------------------------------ */
+/* INI: MODULOS em GERAL: topo, main... ---------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */
+   /* Alinhamenos e configurações dos headers dos módulos(topo.asp) */
+   .top_table { 
+		width:100%; height:58px; border:0px; margin:0px; padding:0px; vertical-align:top; border-collapse:collapse; }
+   .top_menu  { 
+		background-image:url(../img/Menu_TopBgLeft.jpg);    
+		vertical-align:top; padding:10px 0px 0px 10px;  border-collapse:collapse; }					
+   .top_middle{ 
+		background-image:url(../img/Menu_TopImgCenter.jpg); vertical-align:top; 
+		padding:0px; margin:0px;  border-collapse:collapse; } 					
+   .top_filtros{ 
+		background-image:url(../img/Menu_TopBgRight.jpg); vertical-align:bottom; 
+		padding:0px 5px 5px 0px; margin:0px;  
+		text-align:right; border:none; border-collapse:collapse; } 
+
+   /*OPERA: Estes 4 estilos acima não funcionaram no OPERA, 
+     no entanto colocando os estilos diretamente na tag STYLE funciona :P
+     Provisoriamente, nas páginas TOPO.ASP mantive a chamada da CLASS, 
+	 mas repeti as declarações de estilo STYLE localmente, assim funcionam
+	 em todos navegadores até que eu consiga  ver qual é o real problema */
+
+   /* Botão de pesquisa nas páginas topo.asp */
+   div.btsearch   { background-image:url(../img/bt_search_mini.gif); cursor:pointer; 
+                    height:19px; width:25px; display:inline-block; text-align:right; vertical-align:top; } 
+
+/*------------------------------------------------------------------------------------------ */
+/* FIM:  MODULOS em GERAL: topo, main... --------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */
+
+/*------------------------------------------------------------------------------------------ */
+/* INI: DIALOGS and FORM FIELDS */
+/*------------------------------------------------------------------------------------------ */
+  /* Cabeçalho e estrutura geral */
+  .dialog_margin 	{ padding:10px 0px 10px 0px; margin:0px; vertical-align:middle; }
+  .caption			{ background:#FF9900;  color:white; 
+  					  /* background:WhiteSmoke or SteelBlue or Lavender... (#7DACC5) */
+  					}                
+  .dialog_ext		{ background:WhiteSmoke; border:1px solid #CCCCCC;    
+					  /*  background:White or WhiteSmoke or SteelBlue ... */
+  					}                
+  .dialog_ext_buts	{ background:#D0DCDF; text-align:right
+  					  /*  background:White or WhiteSmoke or SteelBlue ... */
+  					}                
+  .dialog_int		{ background:White; border:1px dotted #CCCCCC;         
+  					  /*  background:White or WhiteSmoke ... */
+                      padding:10px; 
+					}        
+  
+  /* Para montagem dos formulários: Labels e Inputs... 
+     campos dos formulários em geral (dialogs) */
+  /* **OBS: Caso largura do LABEL for alterada, também 
+            há a necessidade de alterar os outros elementos 
+			relacionados como a Imagem LINE GROUP, setando 
+			sua margin corretamente. */
+  div.form_line  			{ margin:0px; border:none;  border-collapse:collapse; }
+  div.form_label 			{ display:inline-block; text-align:right; 
+  							  vertical-align:top; width:110px; margin-bottom:13px; }
+  div.form_label_nowidth	{ display:inline-block; text-align:right; }
+  div.form_bypass           { display:inline-block; padding-left:5px; height:20px; } 
+  div.form_bypass_multiline { display:inline-block; margin-left:115px; margin-right:20px; text-align:left; } 
+  div.form_grupo 			{ 
+  	/* DIVISÃO de GRUPO */
+	margin-top: 5px;
+	padding:10px 0px 3px 0px; 
+	background:White;
+	background:url('../img/line_group.gif');
+	background-position: 105px -2px;
+	background-repeat: no-repeat;
+	text-align:left;
+    overflow:visible;
+  } 
+  div.form_grupo_collapse	{ 
+  	/* DIVISÃO de GRUPO */
+	margin-top: 5px;
+	height: 20px;
+	padding:10px 0px 3px 0px; 
+	background:url('../img/line_group.gif');
+	background-position: 105px -2px;
+	background-repeat: no-repeat;
+	text-align:left;
+    overflow:hidden;
+  }  	  
+  div.form_ajuda 			{ 
+  	/* HELP - DESC CAMPOS*/ 
+	font-family:Tahoma; color:#CCCCCC; 
+	text-decoration: none; 
+	font-size:10px; 
+	font-style:normal; 
+	margin-left:114px;
+  }
+ 
+  table tr td div.divgrupo 	{ width:90%; border-bottom:1px solid #8FA7B3; padding:10px 0px 3px 0px; text-align:left } /*  DIVISÃO de GRUPO usada nas DIALOGS  */
+
+  /* FLAT FORM's OBJECTS ------------------------------------------------------------------- */
+  input { 
+    background:WhiteSmoke; border:1px solid #fff; 
+  	font-family:Tahoma; font-size:12px; color:#111111;
+  	height:18px; margin:1px; padding-left:4px;
+  }
+  select { 
+    background:WhiteSmoke; border:1px solid #FFF; 
+	font-family:Tahoma; font-size:12px; color:#333333; 
+	height:20px; width:180px; margin:1px;
+  }
+  textarea { 
+    background:WhiteSmoke; border:1px solid #FFF; 
+	font-family:Tahoma; font-size:12px;  color:#111111;
+	width:300px; margin:1px 1px 3px 1px; padding-left:4px;
+  }
+  .inputclean { 
+	border:0px transparent solid; 
+	background:#FFFFFF; 
+	background-image:url();
+  	/* Para inputs que não tenham borda "image, radio, check..."  */
+  }  
+
+  /* Campos de filtragem (geralmente na topo.asp) ------------------------------ */
+  .edtext { 
+    background:white; border:1px solid #777777; font-family:Tahoma; font-size:11px; color:#303030; height:14px; 
+  }
+  .edtext_combo { 
+  	font-family:Tahoma; background:white; border:1px solid #777777; font-size:11px; color:#303030; height:18px; 
+  }
+  .texto_ajuda { 
+	font-family:Tahoma; color:#CCCCCC; text-decoration: none; font-size:10px; font-style:normal; 
+	/* help - desc campos */ 
+  } 
+  a.texto_ajuda:hover { 
+    font-family:Tahoma; color:#999999; text-decoration: none; font-size:10px; font-style:normal; 
+  }
+   
+/*------------------------------------------------------------------------------------------ */
+/* FIM: DIALOGS and FORM FIELDS */
+/*------------------------------------------------------------------------------------------ */
+
+/*------------------------------------------------------------------------------------------ */
+/* INI: Menus em geral --------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */
+  /*  MENU --------------------------------------------------------------------------------- */
+  .menu			{ font-family:Tahoma; color: #666666; text-decoration: none; font-weight: bold; font-size:11px; }
+  a.menu:hover	{ font-family:Tahoma; color: #999999; text-decoration: none; font-weight: bold; }
+
+  /*  MENU LEFT ----------------------------------------------------------------------------- */
+  .menuleft {	color: #666666;	text-decoration: none; font-size:10px;	 font-family :Tahoma; font-weight:bold; }
+  a.menuleft:hover { color: #999999; text-decoration: none; font-weight: bold; }
+
+  /*  MENU ACORDEON ------------------------------------------------------------------------- */
+  .titulo_menu_acord      { float:left; clear:left; background: url('../img/bg_panel_top.gif'); 
+                            background-repeat:no-repeat; width:182px; height:32px; cursor:pointer; }
+  .titulo_menu_acord img  { float:right; margin-right:9px; //margin-right:1px }
+  .titulo_menu_acord span { float:left; line-height:32px; vertical-align:middle; font-family:arial;
+                            font-size:0.8em; /* font-size:0.7em; */ color:#4482AD; /* color:#215DC6;  */
+	                        font-weight:bold; float:left; padding-left:8px; /* letter-spacing:0.1; */ }
+  .conteudo_menu_acord    { float:left; clear:left;	background-color: #FFFFFF; padding:0; margin:0 0 0 0;
+	                        width:179px; //width:181px; border-left:1px solid #CFCFCF; 
+							border-bottom:1px solid #CFCFCF; border-right:1px solid #CFCFCF; }
+  .conteudo_menu_acord li { font-size:0.7em; background-image:url('../img/bg_pane_right.gif'); background-position:top right;
+	                        background-repeat:repeat-y; border-left:1px solid #FFF; border-bottom:1px solid #FFF;	
+	                        padding-left:2px; padding-right:2px; overflow:hidden; position:relative; clear:both;
+	                        padding:0; margin:0; float:left; width:178px; //width:180px; }
+  .painel_menu_acord      {	float:left;	margin-left:10px; }
+
+/*------------------------------------------------------------------------------------------ */
+/* FIM: Menus em geral --------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------ */	
+
+/*------------------------------------------------------------------------------------------ */
+/* INI: Subsistemas ------------------------------------------------------------------------ */
+/*------------------------------------------------------------------------------------------ */
+  /*  HTML AREA ---------------------------------------------------------------------------------- */
+  .label { 
+	background-color: #FFFFFF;    
+	font-family:Tahoma,arial,helvetica; font-size:14px; font-weight: bold; color:#3D5E67; 
+	BORDER-RIGHT: 0px;   
+	BORDER-TOP: 0px;   
+	BORDER-LEFT: 0px;      
+	BORDER-BOTTOM: 0px 
+  }
+  
+  /*  FILE MANAGER ---------------------------------------------------------------------------------- */
+  .edbutton { 
+	background-color: #E9E9E9;
+	font-family: Verdana;
+	font-size:9px;
+	font-style: normal;
+	font-weight: bold;
+	color: #666666;
+	BORDER-RIGHT: #999999 1px solid;
+	BORDER-TOP: #999999 1px solid;
+	BORDER-LEFT: #999999 1px solid;
+	BORDER-BOTTOM: #999999 1px solid;
+  }
+/*------------------------------------------------------------------------------------------ */
+/* FIM: Subsistemas ------------------------------------------------------------------------ */
+/*------------------------------------------------------------------------------------------ */
+
+  /* .bpanel   { SCROLLBAR-FACE-COLOR: #e3e2dc; SCROLLBAR-HIGHLIGHT-COLOR: #eae9e5; SCROLLBAR-SHADOW-COLOR: #aaa9a5; COLOR: #766d5b; 
+	          SCROLLBAR-3DLIGHT-COLOR: #f1f1ee; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #e9e8e3;  
+			  SCROLLBAR-DARKSHADOW-COLOR: #71716e; } */
+
+/*
+h1{font-family: arial;	margin: 0;	padding: 0;	font-size:19px;}
+h2{font-family: arial;	margin: 0;	padding: 0;	font-size:25px;}
+h3{font-family: arial;	margin: 0;	padding: 0;	font-size:30px;}
+em{font-family: arial;	margin: 0;	padding: 0;	font-size:18px;}
+dfn{font-family: arial;	margin: 0;	padding: 0;	font-size:16px;}
+
+@media screen {
+.sIFR-hasFlash h1 {visibility: hidden;}
+.sIFR-flash {visibility: visible !important;}
+.sIFR-replaced {visibility: visible !important;}
+span.sIFR-alternate {position: absolute;left: 0;top: 0;width: 0;height: 0;display: block;overflow: hidden;}
+*/

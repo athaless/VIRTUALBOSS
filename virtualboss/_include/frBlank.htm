@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<!-- FRAME em BANCO para o FF 
+  Nas páginas DEFAULT.HTM de cada módulo montamos um frameset com a página TOP.asp  (vbTopFrame) e um vazio (vbMainFrame).
+  No onload do TTOPO.ASP acionamso o submit do form de filtragem para abrir a página MAIN.ASP no frameset vbMainFrame.
+  No caso do FF a montagem do vbMainFrame com source (src) vazio provoca um efeito deerro de página antes que o submit do top aconteça,
+  por isso passamosa montar este frameset das  páginas DEFAULT.HTM de cada módulo com o vbMainFrame não mais vazio, ou seja
+  com esta página "dummy" aqui frBlank.htm.
+  
+  *Obs.: isto não tem a pretenção de ser um pre-load, isto é feito através de configuração no athDBCOnn, mas como tinha de colocar a 
+  página embranco mesmo, reolvi colocar o .gif animado nela, e acaba simulando o efeito de pre-load na primeira carga do modulo
+-->
+<style>
+.centro {
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-50px;
+  margin-left:-50px;
+}
+</style>
+<!-- Quando ativei o preload REAL (asthDBConn) resolvi retirar essa imagem aqui -->
+<div class="centro" align="center"><img src="../img/anim_preload_frame.gif"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<%
+    strTextBoxName = Server.HTMLEncode(Request("var_TextBoxName"))
+	strIndexForm   = Server.HTMLEncode(Request("var_IndexForm"))
+%>
+<html>
+  <head>
+    <title>Teste</title>
+    <script type="text/javascript">
+      _editor_url = "htmlarea/";
+      _editor_lang = "pt_br";
+    </script>
+    <script type="text/javascript" src="htmlarea/htmlarea.js"></script>
+    <script type="text/javascript" src="htmlarea/dialog.js"></script>
+    <script type="text/javascript" src="htmlarea/popupwin.js"></script>
+    <!-- <script type="text/javascript" src="htmlarea/popupdiv.js"></script> -->
+    <script type="text/javascript">
+      HTMLArea.loadPlugin("ContextMenu");
+      HTMLArea.loadPlugin("FullPage");
+      //HTMLArea.loadPlugin("SpellChecker");
+      HTMLArea.loadPlugin("TableOperations");
+
+      var editor = null;
+      function initDocument() {
+        editor = new HTMLArea("editor");
+        editor.registerPlugin(ContextMenu);
+        editor.registerPlugin(FullPage);
+        //editor.registerPlugin(SpellChecker);
+        editor.registerPlugin(TableOperations);
+        editor.generate();
+      }
+	  function enviahtml()
+	  {
+	    window.opener.forms[<%=strIndexForm%>].<%=strTextBoxName%>.value = editor.getHTML();
+		window.close();
+	  }
+    </script>
+    <link rel="stylesheet" href="htmlarea/htmlarea.css" type="text/css">
+  </head>
+  <body onload="initDocument()">
+    <textarea id=editor style="height:30em;width:300">Teste</textarea>
+    <hr/>
+    <input type=button value="Enviar" onClick="enviahtml();">
+  </body>
+</html>

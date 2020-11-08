@@ -1,0 +1,34 @@
+2013-04-24 14:11:03 ERROR  : ERRO:  erro de sintaxe em ou próximo a "SEELCT"
+LINE 1: SEELCT * FROM FIN_NF LIMIT 0
+        ^
+2013-04-24 14:13:43 ERROR  : ERRO:  erro de sintaxe em ou próximo a "SEELCT"
+LINE 1: SEELCT * FROM FIN_NF_COMPRAS LIMIT 0
+        ^
+2013-04-24 14:16:53 ERROR  : ERRO:  operador não existe: character varying = integer
+LINE 1: SELECT * FROM ped_nota_fiscal WHERE idnfe = 173944
+                                                  ^
+HINT:  Nenhum operador corresponde com o nome e o(s) tipo(s) de argumento(s) informados. Você precisa adicionar conversões de tipo explícitas.
+2013-04-24 14:19:36 ERROR  : ERRO:  tipo "idnf" não existe
+LINE 1: SELECT * FROM fin_nf_compras WHERE idnf '173944'
+                                           ^
+2013-04-24 14:20:15 ERROR  : ERRO:  tipo "idnfc" não existe
+LINE 1: SELECT * FROM fin_nf_compras WHERE idnfc '173944'
+                                           ^
+2013-04-24 14:20:19 ERROR  : ERRO:  erro de sintaxe em ou próximo a "173944"
+LINE 1: SELECT * FROM fin_nf_compras WHERE idnfc 173944
+                                                 ^
+2013-04-24 14:48:05 ERROR  : ERRO:  sintaxe de entrada é inválida para integer: ""
+CONTEXT:  PL/pgSQL function spr_vendas_produtos(character varying,character varying,character varying) line 34 at FOR sobre registros de SELECT
+2013-04-24 14:50:49 ERROR  : ERRO:  coluna "in_idevento" não existe
+LINE 13:              AND ped_pedidos.idevento = in_idevento
+                                                 ^
+2013-04-24 14:50:58 ERROR  : ERRO:  sintaxe de entrada é inválida para integer: ""
+2013-04-24 14:51:55 ERROR  : ERRO:  coluna "id_status" não existe
+LINE 1: SELECT id_status from ped_pedidos limit 0
+               ^
+2013-04-24 14:52:44 ERROR  : ERRO:  coluna "ped_pedidos.idstatus" deve aparecer na cláusula GROUP BY ou ser utilizada em uma função de agregação
+LINE 6:         ,ped_pedidos.idstatus
+                 ^
+2013-04-24 14:54:05 ERROR  : ERRO:  sintaxe de entrada é inválida para integer: ""
+LINE 1: SELECT CAST('' AS INTEGER)
+                    ^
